@@ -35,7 +35,7 @@ Things you may want to cover:
 
 ### Association
 - has_many :room_users
-- has_many :rooms,through: room_users
+- has_many :rooms, through: room_users
 - has_many :messages
 
 ## rooms テーブル
@@ -59,8 +59,8 @@ Things you may want to cover:
 
 ### Association
 
-- belong_to :room
-- belong_to :user
+- belongs_to :room
+- belongs_to :user
 
 ## messages テーブル
 
@@ -71,5 +71,6 @@ Things you may want to cover:
 | room    | references | null: false, foreign_key: true |
 
 ### Association
+
 - belongs_to :room
 - belongs_to :user
